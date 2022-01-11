@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="margin_timer">30dp</dimen>
+    <dimen name="timer_text_size">45sp</dimen>
+    <dimen name="margin_btn">30dp</dimen>
+</resources>
