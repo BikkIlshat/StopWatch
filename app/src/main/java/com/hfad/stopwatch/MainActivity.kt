@@ -48,7 +48,6 @@ class MainActivity : AppCompatActivity() {
         setContentView(viewBinding.root)
 
         with(viewBinding) {
-            job?.cancel()
             job = scope.launch {
                 mainViewModelFirstwatcher
                     .ticker

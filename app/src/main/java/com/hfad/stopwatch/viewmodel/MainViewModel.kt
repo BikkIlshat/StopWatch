@@ -24,7 +24,6 @@ class MainViewModel(
 
 
     private fun startJob() {
-        job?.cancel()
         job = scope.launch {
             while (isActive) {
                 mutableTicker.value = stopwatchStateHolder.getStringTimeRepresentation()
@@ -45,6 +44,7 @@ class MainViewModel(
     }
 
     private fun stopJob() {
+        job?.cancel()
         scope.coroutineContext.cancelChildren()
         job = null
     }
